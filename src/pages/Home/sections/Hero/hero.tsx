@@ -10,7 +10,7 @@ import NavBar from "../../../../components/NavBar/NavBar"
 const Hero = () => {
 
   const StyleHero = styled("div")(() => ({
-    backgroundColor: "#0F172A",
+    backgroundColor: "#0c0011",
     height: "100vh",
     display: "flex",
     alignItems: "center",
@@ -33,7 +33,7 @@ const Hero = () => {
           <Grid container spacing={2}>
             <Grid size={{ xs: 12, md: 5 }}>
               <Box position="relative">
-                <Box position="absolute" width={"160%"} top={-100} right={0}>
+                <Box position="absolute" width={"160%"} top={-160} right={0}>
                   <AnimatedBackground />
                 </Box>
 
@@ -47,7 +47,7 @@ const Hero = () => {
 
             <Grid size={{ xs: 12, md: 7 }}>
               <Typography color="info" variant="h1" textAlign="center">Sara Cipriano</Typography>
-              <Typography color="#e3c87e" variant="h2" textAlign="center">Computer Engineering Student</Typography>
+              <Typography color="#f0e8d4" variant="h2" textAlign="center">Computer Engineering Student</Typography>
               <Grid container display="flex" justifyContent="center" spacing={3}>
                 <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
 

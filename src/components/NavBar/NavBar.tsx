@@ -1,22 +1,38 @@
 import styled from "@emotion/styled"
 import { AppBar, MenuItem } from "@mui/material"
-
+import { useEffect, useState } from "react"
 
 const NavBar = () => {
 
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 50) { 
+          setScrolled(true)
+        } else {
+          setScrolled(false)
+        }
+      }
+  
+      window.addEventListener("scroll", handleScroll)
+      return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
     const StyleToobar = styled("div")(() => ({
-        backgroundColor: "#0F172A",
+        backgroundColor: scrolled ? "#02797f" : "#060017",
         display: "flex",
         justifyContent: "space-evenly",
-        color: "#e3c87e",
+        color: "white",
         height: "50%"
     }))
+
+    const [scrolled, setScrolled] = useState(false)
+
+ 
 
 
     return (
         <>
-            <AppBar position="absolute">
-                <StyleToobar sx={{ minHeight: 100 }}>
+            <AppBar position="fixed">
+                <StyleToobar>
                     <MenuItem>About</MenuItem>
                     <MenuItem>Skills</MenuItem>
                     <MenuItem>Projects</MenuItem>
