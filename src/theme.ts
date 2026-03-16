@@ -1,17 +1,16 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { purple, green } from '@mui/material/colors';
 
 let theme = createTheme({
   palette: {
     primary: {
-      main: "#F1F5F9",
+      main: "#38BDF8",
     },
     secondary: {
-      main: "#22C55E",
+      main: "#39FF14",
     },
     info: {
-        main: "#38BDF8"
-    },
+        main: "#10B981",
+    }
   },
   typography: {
     fontFamily: "Helvetica Neue"
