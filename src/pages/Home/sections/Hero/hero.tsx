@@ -10,7 +10,7 @@ import NavBar from "../../../../components/NavBar/NavBar"
 const Hero = () => {
 
   const StyleHero = styled("div")(() => ({
-    backgroundColor: "#0c0011",
+    backgroundColor: "#252222f4",
     height: "100vh",
     display: "flex",
     alignItems: "center",

@@ -17,7 +17,7 @@ const NavBar = () => {
       return () => window.removeEventListener("scroll", handleScroll)
     }, [])
     const StyleToobar = styled("div")(() => ({
-        backgroundColor: scrolled ? "#02797f" : "#060017",
+        backgroundColor: scrolled ? "#0cbec77c" : "#56996cd5",
         display: "flex",
         justifyContent: "space-evenly",
         color: "white",
