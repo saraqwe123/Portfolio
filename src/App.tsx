@@ -19,9 +19,7 @@ const App = () => {
       />
       <Hero />
       <About />
-      <Projects />
-      <Skill/>
-
+    
     </>
   )
 }
