@@ -27,7 +27,7 @@ const Hero = () => {
 
   return (
     <>
-      <StyleHero>
+      <StyleHero id="hero">
         <Container maxWidth="lg">
           <NavBar/>
           <Grid container spacing={2}>
@@ -57,10 +57,13 @@ const Hero = () => {
                   </StyledButton>
 
                 </Grid>
-                <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
-                  <StyledButton>
+                <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center" >
+                  <StyledButton >
                     <AttachEmailIcon />
-                    <Typography>Contact me</Typography>
+                   
+                    <Typography >
+                      
+                      Contact me</Typography>
                   </StyledButton>
                 </Grid>
               </Grid>

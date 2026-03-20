@@ -6,7 +6,7 @@ const NavBar = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        if (window.scrollY > 50) { 
+        if (window.scrollY > 650) { 
           setScrolled(true)
         } else {
           setScrolled(false)
@@ -33,9 +33,10 @@ const NavBar = () => {
         <>
             <AppBar position="fixed">
                 <StyleToobar>
-                    <MenuItem>About</MenuItem>
-                    <MenuItem>Skills</MenuItem>
-                    <MenuItem>Projects</MenuItem>
+                    <MenuItem component="a" href="#hero">Hero</MenuItem>
+                    <MenuItem component="a" href="#about">About</MenuItem>
+                    <MenuItem component="a" href="#skills">Skills</MenuItem>
+                    <MenuItem component="a" href="#projects">Projects</MenuItem>
                 </StyleToobar>
             </AppBar>
         </>
